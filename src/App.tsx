@@ -29,15 +29,15 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" value={formData.name} onChange={(e) => updateFormData(e)} />
+          <input type="text" name="name" id="name" value={formData.name} onChange={updateFormData} />
         </div>
         <div>
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" value={formData.email} onChange={(e) => updateFormData(e)} />
+          <input type="email" name="email" id="email" value={formData.email} onChange={updateFormData} />
         </div>
         <div>
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" value={formData.message} onChange={(e) => updateFormData(e)}></textarea>
+          <textarea name="message" id="message" value={formData.message} onChange={updateFormData}></textarea>
         </div>
         <button type='submit'>Submit</button>
       </form>
